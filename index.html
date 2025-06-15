@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rotating Loader with Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+
+  <div class="login-form" id="loginForm" style="display: none;">
+    <h2>Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" value="naziya" readonly />
+    <label for="password">Password:</label>
+    <input type="password" id="password" value="122" readonly class="blink" />
+    <button onclick="alert('Login Submitted!')">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

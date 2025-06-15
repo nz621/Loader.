@@ -1,0 +1,62 @@
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #00f;
+  border-top: 10px solid #0f0;
+  border-right: 10px solid #f0f;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.login-form input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { visibility: hidden; }
+}
